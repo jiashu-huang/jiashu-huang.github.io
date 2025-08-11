@@ -15,6 +15,13 @@ h1 {
     padding-bottom: 5px;
 }
 
+.english-name {
+    color: #0031A7; /* dark blue color for English name */
+}
+.chinese-name {
+    color: #44b8f3; /* light blue color for Chinese name */
+}
+
 h2 {
     font-size: 1.2em;
     color: #2D2D2D;
