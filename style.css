@@ -33,8 +33,13 @@ p {
     text-align: justify;
 }
 
+.email {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+}
+
 footer {
-    margin-top: 0px;
+    margin-top: 30px;
     padding-top: 0px;
     background-color: #FAFAFA;
     font-size: 0.85em;
@@ -47,19 +52,19 @@ footer {
     text-align: center;
 }
 
-.license-section h3 {
-    font-size: 1.1em;
+.license-section h2 {
+    /* font-size: 1.1em; */
     color: #001D64;
     /* margin-bottom: 15px; */
 }
 
 .license-section p {
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
     line-height: 1.4;
 }
 
 .copyright {
-    margin-top: 15px;
+    /* margin-top: 5px; */
     /* font-size: 0.85em; */
     color: #6AC9C8;
     font-style: italic;
