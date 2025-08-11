@@ -28,7 +28,48 @@ h2 {
 }
 
 p {
-    color: #000000;
+    /* color: #000000; */
     margin-bottom: 3px;
     text-align: justify;
+}
+
+footer {
+    margin-top: 0px;
+    padding-top: 0px;
+    background-color: #FAFAFA;
+    font-size: 0.85em;
+}
+
+.license-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.license-section h3 {
+    font-size: 1.1em;
+    color: #001D64;
+    /* margin-bottom: 15px; */
+}
+
+.license-section p {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.copyright {
+    margin-top: 15px;
+    /* font-size: 0.85em; */
+    color: #6AC9C8;
+    font-style: italic;
+}
+
+footer a {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #1a5280;
 }
