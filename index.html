@@ -10,7 +10,7 @@
       body{margin:0;background:#fff;color:#111;font-family:'Computer Modern Serif',Georgia,serif}
       .page{box-sizing:border-box;max-width:816px;margin:0 auto;padding:96px}
       .page h1,.page h2,.page h3,.page h4,.page h5{font-family:"Computer Modern Serif",Georgia,serif;font-weight:700;line-height:1.25;margin:2em 0 0.6em}
-      .page h1{font-size:24px;text-align:center;margin-top:0.5em}
+      .page h1{font-size:26px;text-align:center;margin-top:0.5em}
       .page h2{font-size:22px}
       .page h3{font-size:18px;font-weight:600}
       @media (max-width:600px){.page{padding:96px 32px}.page h1{font-size:24px}.page h2{font-size:20px}.page h3{font-size:16px}}
@@ -25,12 +25,27 @@
       .katex-display>.katex>.katex-html{display:block}
       .page .md-button{display:inline-block;padding:8px 16px;border-radius:6px;background:#fff;border:1px solid #e6e6e6;color:#111;text-decoration:none;font-family:inherit;font-size:14px;line-height:1.2;cursor:pointer;transition:all 0.2s ease}
       .page .md-button:hover{border-color:#d5e4fa;background:#ebf3ff;color:#0b3d91;text-decoration:none}
+      .centered-text {text-align:center; margin: 1em 0;}
+      .text-author-name {font-size: 14px; margin-top:0em; margin-bottom:0em; padding-top: 0em; padding-bottom: 0em;}
+      .text-author {font-size: 10px; font-style: italic; margin-top:0em; margin-bottom:0em; padding-top: 0em; padding-bottom: 0em;}
+      .footnote-ref {font-size: 0.75em; vertical-align: super; text-decoration: none;}
+      .footnotes {margin-top: 3em; padding-top: 1em; border-top: 1px solid #eee; font-size: 14px;}
+      .footnote-item {margin-bottom: 0.5em;}
+      .small-caps {font-variant: small-caps;}
     </style>
   </head>
   <body>
     <article class="page"><h1>Jason Huang 嘉樹</h1>
-<p><strong>Abstract</strong></p>
-<p>I am a graduate student in physics at Brown University. I received my bachelor’s degree concentrating in physics and computer science from Brown University in 2025.</p>
+    <!-- <div class="centered-text">
+      <p class="text-author-name">J. Huang</p>
+      <p class="text-author">Department of Physics, Brown University, Providence RI 02912</p>
+      <p class="text-author">jias*u_*uang@brown.edu</p>
+    </div> -->
+    <div class="centered-text">
+      <p class="text-author-name">J. Huang<a href="#fn1" class="footnote-ref">&dagger;</a></p>
+      <p class="text-author">Department of Physics, Brown University, Providence RI 02912</p>
+    </div>
+<p><span class="small-caps">Abstract.</span> I am a graduate student in physics at Brown University. I received my bachelor’s degree concentrating in physics and computer science from Brown University in 2025.</p>
 <p>Key links: <a href="https://github.com/jiashu-huang/"><em>Github</em></a>, <a href="https://www.linkedin.com/in/huangjiashu/"><em>LinkedIn</em></a></p>
 <hr>
 <h2>Research</h2>
@@ -51,6 +66,13 @@
 <h2>Acknowledgements, licenses, and copyright</h2>
 <p>This website was built using <a href="https://toha.world/latexbuthtml">https://toha.world/latexbuthtml</a> by Toha. You can support Toha <a href="https://buymeacoffee.com/imthetoha">here</a>.</p>
 <p>All content and documentation is licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International (CC BY 4.0)</a> unless specialised otherwise. ©<em> 2025 Jiashu Huang. All rights reserved.</em></p></p>
+
+<div class="footnotes">
+  <div class="footnote-item" id="fn1">
+    <strong>&dagger;</strong> jias*u_*uang@brown.edu, where * is a physical constant whose only use is to make partition functions dimensionless. In better unit systems it is set to be 2π.
+  </div>
+</div>
+
 </article>
   </body>
 </html>
