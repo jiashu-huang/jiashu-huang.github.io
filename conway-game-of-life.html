@@ -33,14 +33,22 @@
       <h2>Findings</h2>
       <!-- <h3>A long-lived pattern (LLP) of 14 cells</h3> -->
       <img src="files/conway-game-of-life/conway-LLP-14.png" style="width: 33%;" alt="x = 6, y = 7, rule = B3/S23 bbbobb$bbobob$bobbob$oboobo$bobbob$bobobb$bbobbb!" />
-      <span class="caption">Figure 1: A long-lived pattern (LLP) of fourteen cells, evolving into ten stable units and two gliders after 270 steps.</span>
+      <span class="caption">Figure 1: A Methuselah of fourteen cells, evolving into ten stable units and two gliders after 270 generations.</span>
 
       <h2>Questions</h2>
-      <h3>The Conway busy beaver</h3>
+      <h3>Connected diehards</h3>
       <p>
-        Consider a pattern that start with a fixed number of starting cells and halts (i.e. annihilates totally, leaves a clean slate, etc.). 
-        What is the maximum number of steps it can take before halting?
+        Consider a pattern that start with a fixed number of starting cells and vanishes eventually. 
+        What is the maximum number of steps it can take before vanishing?
         <!-- One additional condition should be added, that we will not consider a "simple combination" of patterns -->
+      </p>
+      <p>
+        Note that we need some kind of requirement on connectivity. 
+        Without that, using eight cells, you can create a glider and a beacon.
+        Place them far away enough and have them collide into each other. 
+        We define a weak form of connectivity called "Conway-connectivity": 
+        A pattern is Conway-connected if there exists at least one empty cell that would become alive in the next generation given the current pattern, 
+        but this same empty cell would remain dead if any connected component of the current pattern were removed.
       </p>
       <p>
         Since the Game of Life is turing complete, this question is similar to the busy beaver problem.
@@ -58,10 +66,11 @@
         <tr><td>2</td><td>1</td></tr>
         <tr><td>3</td><td>1</td></tr>
         <tr><td>4</td><td>5</td></tr>
+        <tr><td>5</td><td>?</td></tr>
         </tbody>
 
-      This sequence must be increasing: put the previous maximum-and-halting pattern and add one cell sufficiently far away from it to obtain a halting pattern. 
-      Perhaps I should use combinatorial methods to compute the first ten entries and submit to OEIS.
+      <!-- This sequence must be increasing: put the previous maximum-and-halting pattern and add one cell sufficiently far away from it to obtain a halting pattern. 
+      Perhaps I should use combinatorial methods to compute the first ten entries and submit to OEIS. -->
       <!-- <eq>
         <span class="katex">
         <span class="katex-mathml">
