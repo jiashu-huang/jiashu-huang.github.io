@@ -1,80 +1,112 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap');
-
 body {
-    font-family: 'Garamond', 'EB Garamond', 'Times New Roman', serif;
-    font-size: 20px;
-    line-height: 1.6;
-    color: #333333;
-    max-width: 800px;
-    margin: 0 auto;
+  margin: 0;
+  background: #fff;
+  color: #111;
+  font-family: 'Computer Modern Serif', Georgia, serif;
 }
 
-h1 {
-    font-size: 1.5em;
-    color: #001D64;
-    padding-bottom: 5px;
+.page {
+  box-sizing: border-box;
+  max-width: 816px;
+  margin: 0 auto;
+  padding: 96px;
 }
 
-.english-name {
-    color: #0031A7; /* dark blue color for English name */
-}
-.chinese-name {
-    color: #44b8f3; /* light blue color for Chinese name */
-}
-
-h2 {
-    font-size: 1.2em;
-    color: #2D2D2D;
+.page h1, .page h2, .page h3, .page h4, .page h5 {
+  font-family: "Computer Modern Serif", Georgia, serif;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 1.5em 0 0.3em;
 }
 
-p {
-    /* color: #000000; */
-    margin-bottom: 3px;
-    text-align: justify;
+.page h1 {
+  font-size: 22px;
+  text-align: center;
+  margin-top: 0.5em;
 }
 
-.email {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 17px;
+.page h2 { font-size: 20px; }
+.page h3 { font-size: 18px; font-weight: 600; }
+
+@media (max-width: 600px) {
+  .page { padding: 96px 32px; }
+  .page h1 { font-size: 24px; }
+  .page h2 { font-size: 20px; }
+  .page h3 { font-size: 16px; }
 }
 
-footer {
-    margin-top: 30px;
-    padding-top: 0px;
-    background-color: #FAFAFA;
-    font-size: 0.85em;
+.page p, .page li {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-.license-section {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
+.page pre {
+  background: #f5f5f7;
+  border: 1px solid #eee;
+  padding: 12px 14px;
+  border-radius: 6px;
+  overflow: auto;
 }
 
-.license-section h2 {
-    /* font-size: 1.1em; */
-    color: #001D64;
-    /* margin-bottom: 15px; */
+.page code {
+  font-family: 'Computer Modern Typewriter', ui-monospace, monospace;
 }
 
-.license-section p {
-    /* margin-bottom: 8px; */
-    line-height: 1.4;
+.page img {
+  display: block;
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+  margin: 2em auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
 }
 
-.copyright {
-    /* margin-top: 5px; */
-    /* font-size: 0.85em; */
-    color: #6AC9C8;
-    font-style: italic;
+.page .caption {
+  display: block;
+  text-align: center;
+  font-size: 0.9em;
+  color: #666;
+  margin: 0.75em 0 2em;
 }
 
-footer a {
-    color: #2980b9;
-    text-decoration: underline;
+/* KaTeX formatting */
+.katex { font-size: 1.02em; }
+.katex-display { margin: 1em 0; }
+.katex-display > .katex { display: block; text-align: center; }
+.katex-display > .katex > .katex-html { display: block; }
+
+.page .md-button {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  color: #111;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
-footer a:hover {
-    color: #1a5280;
+.page .md-button:hover {
+  border-color: #d5e4fa;
+  background: #ebf3ff;
+  color: #0b3d91;
+  text-decoration: none;
 }
+
+/* Custom text styles */
+.centered-text { text-align: center; margin: 1em 0; }
+.text-author-name { font-size: 14px; margin: 0; padding: 0; }
+.text-author { font-size: 10px; font-style: italic; margin: 0; padding: 0; }
+
+/* Footnotes */
+.footnote-ref { font-size: 0.75em; vertical-align: super; text-decoration: none; }
+.footnotes { margin-top: 3em; padding-top: 1em; border-top: 1px solid #eee; font-size: 14px; }
+.footnote-item { margin-bottom: 0.5em; }
+
+/* Small caps */
+.small-caps { font-variant: small-caps; }

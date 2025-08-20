@@ -4,77 +4,80 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Jason Huang 嘉樹</title>
+    
+    <!-- External font and KaTeX styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bitmaks/cm-web-fonts@latest/fonts.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
-    <style>
-      body{margin:0;background:#fff;color:#111;font-family:'Computer Modern Serif',Georgia,serif}
-      .page{box-sizing:border-box;max-width:816px;margin:0 auto;padding:96px}
-      .page h1,.page h2,.page h3,.page h4,.page h5{font-family:"Computer Modern Serif",Georgia,serif;font-weight:700;line-height:1.25;margin:2em 0 0.3em}
-      .page h1{font-size:26px;text-align:center;margin-top:0.5em}
-      .page h2{font-size:22px}
-      .page h3{font-size:18px;font-weight:600}
-      @media (max-width:600px){.page{padding:96px 32px}.page h1{font-size:24px}.page h2{font-size:20px}.page h3{font-size:16px}}
-      .page p,.page li{font-size:16px;line-height:1.5}
-      .page pre{background:#f5f5f7;border:1px solid #eee;padding:12px 14px;border-radius:6px;overflow:auto}
-      .page code{font-family:'Computer Modern Typewriter',ui-monospace,monospace}
-      .page img{display:block;width:80%;height:auto;object-fit:contain;margin:2em auto;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,0.1)}
-      .page .caption{display:block;text-align:center;font-size:0.9em;color:#666;margin:0.75em 0 2em}
-      .katex{font-size:1.02em}
-      .katex-display{margin:1em 0}
-      .katex-display>.katex{display:block;text-align:center}
-      .katex-display>.katex>.katex-html{display:block}
-      .page .md-button{display:inline-block;padding:8px 16px;border-radius:6px;background:#fff;border:1px solid #e6e6e6;color:#111;text-decoration:none;font-family:inherit;font-size:14px;line-height:1.2;cursor:pointer;transition:all 0.2s ease}
-      .page .md-button:hover{border-color:#d5e4fa;background:#ebf3ff;color:#0b3d91;text-decoration:none}
-      .centered-text {text-align:center; margin: 1em 0;}
-      .text-author-name {font-size: 14px; margin-top:0em; margin-bottom:0em; padding-top: 0em; padding-bottom: 0em;}
-      .text-author {font-size: 10px; font-style: italic; margin-top:0em; margin-bottom:0em; padding-top: 0em; padding-bottom: 0em;}
-      .footnote-ref {font-size: 0.75em; vertical-align: super; text-decoration: none;}
-      .footnotes {margin-top: 3em; padding-top: 1em; border-top: 1px solid #eee; font-size: 14px;}
-      .footnote-item {margin-bottom: 0.5em;}
-      .small-caps {font-variant: small-caps;}
-    </style>
+
+    <!-- Your custom stylesheet (now external) -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <article class="page"><h1>Jason Huang 嘉樹</h1>
-    <!-- <div class="centered-text">
-      <p class="text-author-name">J. Huang</p>
-      <p class="text-author">Department of Physics, Brown University, Providence RI 02912</p>
-      <p class="text-author">jias*u_*uang@brown.edu</p>
-    </div> -->
-    <div class="centered-text">
-      <p class="text-author-name">J. Huang<a href="#fn1" class="footnote-ref">&dagger;</a></p>
-      <p class="text-author">Department of Physics, Brown University, Providence RI 02912</p>
-    </div>
-<p><span class="small-caps">Abstract.</span> I am a graduate student in physics at Brown University. I received my bachelor’s degree concentrating in physics and computer science from Brown University in 2025.</p>
-<p>Key links: <a href="https://github.com/jiashu-huang/"><em>Github</em></a>, <a href="https://www.linkedin.com/in/huangjiashu/"><em>LinkedIn</em></a></p>
-<hr>
-<h2>Research</h2>
-<p>My current research is on the rare <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>→</mo><mi>b</mi><mi>W</mi><mi>Z</mi></mrow><annotation encoding="application/x-tex">t \rightarrow bWZ</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">bW</span><span class="mord mathnormal" style="margin-right:0.07153em;">Z</span></span></span></span></eq> decay. I have also done some interesting projects on the side.</p>
-<ul>
-<li><a href="https://github.com/jiashu-huang/belphes">🅱️elphes</a>: <a href="https://github.com/delphes/delphes">Delphes</a> with pseudo b-tagging</li>
-</ul>
-<h2>Expository writings and talks</h2>
-<p>I love to explain things.</p>
-<ul>
-<!-- <li>Physics in College (April 2025)</li> -->
-  <li><a href="https://jiashu-huang.github.io/files/Physics_in_College.pdf" target="_blank">Physics in College</a> (April 2025)</li>
-  <li>Re-imagining Euler’s Number (June 2025)</li>
-</ul>
-<h2>Lecture notes</h2>
-<p>I spent the 2023–24 academic year as an exchange student at <a href="https://www.pem.cam.ac.uk/">Pembroke College, Cambridge</a>, where I took the <a href="https://www.maths.cam.ac.uk/undergrad/full-list-undergraduate-courses">Maths Part II Tripos</a> and also did one module in Physics Part II. As per the glorious tradition among Cantab <a href="https://archive.thetab.com/uk/cambridge/2017/02/16/what-actually-date-mathmo-89152">mathmos</a>, I posit some of my lecture notes here. Please also check out <a href="https://www.damtp.cam.ac.uk/user/tong/teaching.html">David Tong’s notes</a> for other subjects. <a href="https://en.wikipedia.org/wiki/May_God_have_mercy_upon_your_soul">May God have mercy upon your soul</a>.</p>
-<ul>
-<li>Coding &amp; Cryptography</li>
-</ul>
-<h2>Acknowledgements, licenses, and copyright</h2>
-<p>This website was built using <a href="https://toha.world/latexbuthtml">https://toha.world/latexbuthtml</a> by Toha. You can support Toha <a href="https://buymeacoffee.com/imthetoha">here</a>.</p>
-<p>All content and documentation is licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International (CC BY 4.0)</a> unless specialised otherwise. ©<em> 2025 Jiashu Huang. All rights reserved.</em></p></p>
+    <article class="page">
+      <h1>Jason Huang 嘉樹</h1>
 
-<div class="footnotes">
-  <div class="footnote-item" id="fn1">
-    <strong>&dagger;</strong> jias*u_*uang@brown.edu, where * is a physical constant whose only use is to make partition functions dimensionless. In better unit systems it is set to be 2π.
-  </div>
-</div>
+      <!-- Author block -->
+      <div class="centered-text">
+        <p class="text-author-name">J. Huang<a href="#fn1" class="footnote-ref">&dagger;</a></p>
+        <p class="text-author">Department of Physics, Brown University, Providence RI 02912</p>
+      </div>
 
-</article>
+      <p><span class="small-caps">Abstract.</span> I am a graduate student in physics at Brown University. I received my bachelor's degree concentrating in physics and computer science from Brown University in 2025.</p>
+
+      <p>Key links: <a href="https://github.com/jiashu-huang/"><em>Github</em></a>, <a href="https://www.linkedin.com/in/huangjiashu/"><em>LinkedIn</em></a></p>
+      
+      <hr />
+      <h2>Research</h2>
+      <p>
+        My current research is on the rare 
+        <!-- let's not mess with the latex -->
+        <eq>
+          <span class="katex">
+            <span class="katex-mathml">
+              <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>→</mo><mi>b</mi><mi>W</mi><mi>Z</mi></mrow><annotation encoding="application/x-tex">t \rightarrow bWZ</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">bW</span><span class="mord mathnormal" style="margin-right:0.07153em;">Z</span></span>
+            </span>
+          </span>
+        </eq>
+        decay. I have also done some interesting projects on the side.
+      </p>
+      <ul>
+        <li><a href="https://github.com/jiashu-huang/belphes">🅱️elphes</a>: <a href="https://github.com/delphes/delphes">Delphes</a> with pseudo b-tagging</li>
+      </ul>
+
+      <h2>Expository writings and talks</h2>
+      <p>I love to explain things.</p>
+      <ul>
+        <li><a href="https://jiashu-huang.github.io/files/Physics_in_College.pdf" target="_blank">Physics in College</a> (April 2025)</li>
+        <li>Re-imagining Euler’s Number (June 2025)</li>
+      </ul>
+
+      <h2>Lecture notes</h2>
+      <p>
+        I spent the 2023–24 academic year as an exchange student at <a href="https://www.pem.cam.ac.uk/">Pembroke College, Cambridge</a>, where I took the <a href="https://www.maths.cam.ac.uk/undergrad/full-list-undergraduate-courses">Maths Part II Tripos</a> and also did one module in Physics Part II. 
+        As per the glorious tradition among Cantab <a href="https://archive.thetab.com/uk/cambridge/2017/02/16/what-actually-date-mathmo-89152">mathmos</a>, I posit some of my lecture notes here. 
+        Please also check out <a href="https://www.damtp.cam.ac.uk/user/tong/teaching.html">David Tong’s notes</a> for physics and <a href="https://www.math.uni-hamburg.de/home/loewe/Michaelmas2023/M23_AFL.pdf">Benedikt Löwe's notes</a> on Automata & Formal Languages. 
+        <a href="https://en.wikipedia.org/wiki/May_God_have_mercy_upon_your_soul">May God have mercy upon your soul</a>.
+      </p>
+      <ul>
+        <li>Coding &amp; Cryptography</li>
+      </ul>
+
+      <h2>Acknowledgements, licenses, and copyright</h2>
+      <p>This website was built using <a href="https://toha.world/latexbuthtml">https://toha.world/latexbuthtml</a> by Toha. You can support Toha <a href="https://buymeacoffee.com/imthetoha">here</a>.</p>
+      <p>All content and documentation is licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International (CC BY 4.0)</a> unless specialised otherwise. ©<em> 2025 Jiashu Huang. All rights reserved.</em></p>
+
+      <div class="footnotes">
+        <div class="footnote-item" id="fn1">
+          <strong>&dagger;</strong> jias*u_*uang@brown.edu, where * is a physical constant whose only job is to make partition functions of continuous systems dimensionless. In the best unit system it is set to be 
+            <eq>
+              <span class="katex">
+                <span class="katex-mathml">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>π</mi></mrow><annotation encoding="application/x-tex">2\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.03588em;">π</span></span>
+                </span>
+              </span>
+            </eq>.
+        </div>
+      </div>
+    </article>
   </body>
 </html>
