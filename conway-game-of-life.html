@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Conway's Game of Life</title>
+    
+    <!-- External font and KaTeX styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bitmaks/cm-web-fonts@latest/fonts.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+
+    <!-- Your custom stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article class="page">
+      <h1>Conway's Game of Life</h1>
+      
+      <div class="centered-text">
+        <p class="text-author-name">J. Huang</p>
+        <p class="text-author">Department of Physics, Brown University, Providence RI 02912</p>
+        <p class="text-author"><a href="index.html">Back to main page</a></p>
+      </div>
+
+      <p>
+        <span class="small-caps">Abstract.</span> 
+        I describe my findings on the <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Game of Life</a>. 
+        I also ask a few questions on them.
+        <!-- x = 6, y = 7, rule = B3/S23
+        bbbobb$bbobob$bobbob$oboobo$bobbob$bobobb$bbobbb! -->
+      </p>
+
+      <h2>Findings</h2>
+      <!-- <h3>A long-lived pattern (LLP) of 14 cells</h3> -->
+      <img src="files/conway-game-of-life/conway-LLP-14.png" style="width: 33%;" alt="x = 6, y = 7, rule = B3/S23 bbbobb$bbobob$bobbob$oboobo$bobbob$bobobb$bbobbb!" />
+      <span class="caption">Figure 1: A long-lived pattern (LLP) of fourteen cells, evolving into ten stable units and two gliders after 270 steps.</span>
+
+      <h2>Questions</h2>
+      <h3>The Conway busy beaver</h3>
+      <p>
+        Consider a pattern that start with a fixed number of starting cells and halts (i.e. annihilates totally, leaves a clean slate, etc.). 
+        What is the maximum number of steps it can take before halting?
+        <!-- One additional condition should be added, that we will not consider a "simple combination" of patterns -->
+      </p>
+      <p>
+        Since the Game of Life is turing complete, this question is similar to the busy beaver problem.
+        Here I give some basic results.
+      </p>
+        
+      <table class="centered-table">
+        <thead>
+        <tr><th>Starting cells</th><th>Steps to halt</th></tr>
+        </thead>
+
+        <tbody>
+        <tr><td>0</td><td>0</td></tr>
+        <tr><td>1</td><td>1</td></tr>
+        <tr><td>2</td><td>1</td></tr>
+        <tr><td>3</td><td>1</td></tr>
+        <tr><td>4</td><td>5</td></tr>
+        </tbody>
+
+      This sequence must be increasing: put the previous maximum-and-halting pattern and add one cell sufficiently far away from it to obtain a halting pattern. 
+      Perhaps I should use combinatorial methods to compute the first ten entries and submit to OEIS.
+      <!-- <eq>
+        <span class="katex">
+        <span class="katex-mathml">
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span>
+        </span>
+        </span>
+      </eq> -->
+
+      </table>
+
+      <!-- <h2>References</h2>
+      <div class="footnotes">
+        <div class="footnote-item">
+          Conway, J. H. (1970). The game of life. <em>Scientific American</em>, 223(4), 4.
+        </div>
+        <div class="footnote-item">
+          Berlekamp, E., Conway, J. H., & Guy, R. (2001). <em>Winning Ways for Your Mathematical Plays, Volume 2: Games in Particular</em>. A K Peters/CRC Press.
+        </div>
+      </div> -->
+
+      <!-- <hr /> -->
+      <p><a href="index.html" class="md-button">← Back to main page</a></p>
+    </article>
+  </body>
+</html>

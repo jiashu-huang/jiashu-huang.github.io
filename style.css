@@ -110,3 +110,17 @@ body {
 
 /* Small caps */
 .small-caps { font-variant: small-caps; }
+
+.centered-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centered-table th {
+  text-align: center;
+  padding: 8px 16px; /* 8px top/bottom, 16px left/right */
+}
+
+.centered-table td {
+  text-align: center;
+}
